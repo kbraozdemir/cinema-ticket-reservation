@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinema Biletini Al</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Sinema Biletini Al</h1>
+        <form>
+            <label for="name">Ad Soyad:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Telefon Numarası:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="movie">Film Seçiniz:</label>
+            <select id="movie" name="movie" required>
+                <option value="film1">Yukarı Bak</option>
+                <option value="film2">Kung Fu Panda</option>
+                <option value="film3">Arabalar</option>
+            </select>
+
+            <label for="seats">Yetişkin İzleyici:</label>
+            <input type="number" id="adult" name="adult" placeholder="Yetişkin Bilet Sayısı" required>
+
+            <label for="seats">Öğrenci İzleyici:</label>
+            <input type="number" id="student" name="student" placeholder="Öğrenci Bilet Sayısı" required>
+
+            <label for="date">Tarih:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Saat:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="button" onclick="biletFiyati()">Fiyat Hesapla</button>
+
+            <p id="fiyat">Toplam Ücret: 0 TL</p>
+
+            <button type="submit">Rezervasyon Yap</button>
+        </form>
+    </div>
+</body>
+</html>
